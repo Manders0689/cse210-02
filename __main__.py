@@ -1,4 +1,4 @@
-# Our Hilo file
+from game.director import Director
 
-# editing file
-
+director = Director()
+director.start_game()

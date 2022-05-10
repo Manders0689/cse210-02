@@ -31,3 +31,49 @@
 #   -do_updates(): None
 #   -do_outputs(): None
 #   -get_inputs(): None
+
+from game.card import Card
+class Director: 
+    """A person who directs the game. 
+    
+    The responsibility of a Director is to control the sequence of play.
+
+    Attributes:
+        card1: integer<Card>
+        card2: integer<Card>
+        hi_lo: boolean or string
+        is_playing (boolean): Whether or not the game is being played.
+        score (int): The score for one round of play.
+        total_score (int): The score for the entire game.
+    """
+    def __init__(self): {
+
+    }
+
+    def start_game(): {
+
+    }
+
+    def guess_hl(): {
+        """ Gets players guess on whether the next card is higher or lower.
+        
+        Args:
+            self (Director): An instance of Director.
+        """
+    }
+
+    def do_updates(): {
+        """Updates the player's score.
+
+        Args:
+            self (Director): An instance of Director.
+        """
+    }
+
+    def do_outputs(): {
+
+    }
+
+    def get_inputs(): {
+        
+    }
