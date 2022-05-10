@@ -46,34 +46,36 @@ class Director:
         score (int): The score for one round of play.
         total_score (int): The score for the entire game.
     """
-    def __init__(self): {
+    def __init__(self): 
+        """
+        """
+    
 
-    }
+    def start_game(): 
+        """
+        """
+    
 
-    def start_game(): {
-
-    }
-
-    def guess_hl(): {
+    def guess_hl(): 
         """ Gets players guess on whether the next card is higher or lower.
         
         Args:
             self (Director): An instance of Director.
         """
-    }
+        hi_lo = input("Higher or lower? [h/l] ")
 
-    def do_updates(): {
+    def do_updates(): 
         """Updates the player's score.
 
         Args:
             self (Director): An instance of Director.
         """
-    }
 
-    def do_outputs(): {
+    def do_outputs(): 
+        """
+        """
+    
 
-    }
-
-    def get_inputs(): {
-        
-    }
+    def get_inputs(): 
+        """
+        """

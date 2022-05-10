@@ -22,10 +22,11 @@ class Card:
     Attributes:
         value (int): The number on it.
     """
-    def __init__(self): {
-
-    }
+    def __init__(self): 
+        """
+        """
+    
         
-    def pick_card(): {
-
-    }    
+    def pick_card(): 
+        """
+        """  
