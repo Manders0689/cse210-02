@@ -62,9 +62,10 @@ class Director:
         Args:
             self (Director): An instance of Director.
         """
-        self.card1 = self.card1.pick_card()
+        first_card = self.card1 
+        first_card.pick_card()
 
-        print(f"The card is: {self.card1}")
+        print(f"The card is: {first_card.value}")
         self.hi_lo = input("Higher or lower? [h/l] ")
 
     def do_updates(self): 
@@ -76,17 +77,21 @@ class Director:
         if not self.is_playing:
             return 
 
-        self.card2 = self.card2.pick_card()
+        second_card = self.card2 
+        second_card.pick_card()
+        # if the second card is the same as card 1 pick card again
+        while second_card.value == self.card1.value:
+            second_card.pick_card()
         
         if self.hi_lo == "h":
-            if self.card2 > self.card1:
+            if second_card.value > self.card1.value:
                 self.score = 100 
-            elif self.card2 < self.card1:
+            elif self.card2.value < self.card1.value:
                 self.score = -75
         elif self.hi_lo == "l":
-            if self.card2 < self.card1:
+            if self.card2.value < self.card1.value:
                 self.score = 100
-            elif self.card2 > self.card1:
+            elif self.card2.value > self.card1.value:
                 self.score = -75
         self.total_score += self.score
 
