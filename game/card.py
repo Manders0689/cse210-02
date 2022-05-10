@@ -27,6 +27,6 @@ class Card:
         """
     
         
-    def pick_card(): 
+    def pick_card(self): 
         """
         """  
