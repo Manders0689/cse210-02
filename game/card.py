@@ -13,6 +13,7 @@
 #
 # Method:
 #   -pick_card(): None
+import random
 
 class Card:
     """A card that has a value based on the number on it.
@@ -23,10 +24,20 @@ class Card:
         value (int): The number on it.
     """
     def __init__(self): 
+        """Constructs a new instance of Card
+        
+        Args:
+            self (Card): An instance of Card.
         """
-        """
+        self.value = 0
+        self.points = 0
     
         
     def pick_card(self): 
+        """Generates a new random card and calculated the points for that card.
+        
+        Args:
+            self (Card): An instance of Card.
         """
-        """  
+        self.value = random.randint(1, 13)
+        self.points = 100 if self.hi_lo =  else -75 if 
