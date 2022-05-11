@@ -40,4 +40,4 @@ class Card:
             self (Card): An instance of Card.
         """
         self.value = random.randint(1, 13)
-        self.points = 100 if self.hi_lo =  else -75 if 
+        #self.points = 100 if self.hi_lo =  else -75 if 
