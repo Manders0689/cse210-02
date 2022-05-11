@@ -29,9 +29,7 @@ class Card:
         Args:
             self (Card): An instance of Card.
         """
-        self.value = 0
-        self.points = 0
-    
+        self.value = 0    
         
     def pick_card(self): 
         """Generates a new random card and calculated the points for that card.

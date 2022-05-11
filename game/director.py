@@ -86,12 +86,12 @@ class Director:
         if self.hi_lo == "h":
             if second_card.value > self.card1.value:
                 self.score = 100 
-            elif self.card2.value < self.card1.value:
+            elif second_card.value < self.card1.value:
                 self.score = -75
         elif self.hi_lo == "l":
-            if self.card2.value < self.card1.value:
+            if second_card.value < self.card1.value:
                 self.score = 100
-            elif self.card2.value > self.card1.value:
+            elif second_card.value > self.card1.value:
                 self.score = -75
         self.total_score += self.score
 
@@ -109,10 +109,6 @@ class Director:
         print(f"Next card was {card}")
         print(f"Your score is: {self.total_score}")
         self.is_playing == (self.score > 0)
-        
-    
-
-
 
     def get_inputs(self): 
         """
