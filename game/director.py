@@ -49,12 +49,12 @@ class Director:
     def __init__(self): 
         """
         """
-    
+
 
     def start_game(self): 
         """
         """
-    
+        
 
     def guess_hl(self): 
         """ Gets players guess on whether the next card is higher or lower.
@@ -96,9 +96,23 @@ class Director:
         self.total_score += self.score
 
     def do_outputs(self): 
+        """Displays the next card and the score. 
+
+        Args:
+            self (Director): An instance of Director. 
         """
-        """
+
+        if not self.is_playing:
+            return
+
+        card = self.card2
+        print(f"Next card was {card}")
+        print(f"Your score is: {self.total_score}")
+        self.is_playing == (self.score > 0)
+        
     
+
+
 
     def get_inputs(self): 
         """
