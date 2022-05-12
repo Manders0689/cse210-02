@@ -47,7 +47,10 @@ class Director:
         total_score (int): The score for the entire game.
     """
     def __init__(self): 
-        """
+        """Constructs a new Director.
+        
+        Args:
+            self (Director): an instance of Director.
         """
         self.card1 = Card()
         self.card2 = Card()
@@ -58,15 +61,16 @@ class Director:
 
 
     def start_game(self): 
+        """Starts the game by running the main game loop.
+        
+        Args:
+            self (Director): an instance of Director.
+        """
         while self.is_playing:
             self.guess_hl()
             self.do_updates()
             self.do_outputs()
-            self.get_inputs()
-
-        """
-        """
-        
+            self.get_inputs()        
 
     def guess_hl(self): 
         """ Gets players guess on whether the next card is higher or lower.
