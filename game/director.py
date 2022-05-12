@@ -102,14 +102,36 @@ class Director:
             self (Director): An instance of Director. 
         """
 
-        if not self.is_playing:
-            return
-
-        card = self.card2
-        print(f"Next card was {card}")
+        next_card = self.card2
+        print(f"Next card was {next_card.value}")
         print(f"Your score is: {self.total_score}")
-        self.is_playing == (self.score > 0)
 
     def get_inputs(self): 
+        """Asks player if they want to play again
+        and displays final score
+
+        Args:
+            self (Director): An instance of Director. 
         """
-        """
+
+        # if the score is less than 0, end game
+        if self.total_score < 0:
+            self.is_playing = False
+            print()
+            print("Your score is less than 0")
+            print("Game over")
+            return
+
+        # if score is greater than 0, offer option to continue game
+        if self.total_score > 0:
+            play_again = input("Play again? [y/n] ")
+            self.is_playing == "y"
+            print() 
+
+            # if player does not want to continue, 
+            # then end game and give final score
+            if play_again == "n":
+                self.is_playing = False
+                print("Thank you for playing.")
+                print(f"Your final score is {self.total_score}")
+                return
