@@ -49,13 +49,21 @@ class Director:
     def __init__(self): 
         """
         """
-        self.card = []
+        self.card1 = Card()
+        self.card2 = Card()
         self.is_playing = True
+        self.hi_lo = ""
         self.score = 0
-        self.total_score = 0
+        self.total_score = 300
 
 
     def start_game(self): 
+        while self.is_playing:
+            self.guess_hl()
+            self.do_updates()
+            self.do_outputs()
+            self.get_inputs()
+
         """
         """
         
