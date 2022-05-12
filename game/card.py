@@ -1,18 +1,3 @@
-# object: Card
-# Responsibility: To choose card and hold value.
-#
-# Behavior:
-#   -pick a card
-#
-# State:
-#   -card value
-
-# class: Card
-# Attributes:
-#   -value: integer
-#
-# Method:
-#   -pick_card(): None
 import random
 
 class Card:
@@ -38,3 +23,22 @@ class Card:
             self (Card): An instance of Card.
         """
         self.value = random.randint(1, 13)
+        
+        
+        
+        
+# object: Card
+# Responsibility: To choose card and hold value.
+#
+# Behavior:
+#   -pick a card
+#
+# State:
+#   -card value
+
+# class: Card
+# Attributes:
+#   -value: integer
+#
+# Method:
+#   -pick_card(): None
