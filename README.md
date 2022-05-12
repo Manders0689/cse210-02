@@ -30,4 +30,5 @@ root                    (project root folder)
 
 ## Authors
 ---
-Katie Harman (har21099@byui.edu), Mandy Beck (mandy.beck05@gmail.com), Diana Waite, Alexa Thompson
+Katie Harman (har21099@byui.edu), Mandy Beck (mandy.beck05@gmail.com), 
+Diana Waite, Alexa Thompson (a2005strand@yahoo.com)
